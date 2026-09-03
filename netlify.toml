@@ -1,0 +1,9 @@
+# Plain static site: nothing to build, publish the repository root as-is.
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

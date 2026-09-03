@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angelle's Affordable Air Conditioning and Heating — Lafayette, LA</title>
+<meta name="description" content="Family-owned HVAC in Lafayette, Louisiana since 2003. Same-day AC repair, heating, maintenance and installation across Acadiana. Licensed mechanical contractor, insured.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==========================================================================
+     PHONE NUMBER: (337) 555-0182 is the placeholder from the design export.
+     It appears 6 times below (4 visible, 6 tel: links) plus once in script.js.
+     Replace all of them before this goes live -- see README.md.
+     ========================================================================== -->
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="brand-name">Angelle's</span>
+      <span class="brand-tag sub-hide">Affordable Air Conditioning &amp; Heating</span>
+    </div>
+    <div class="header-contact">
+      <span class="header-region sub-hide">Lafayette &amp; Acadiana</span>
+      <a class="header-phone nowrap" href="tel:+13375550182">(337) 555-0182</a>
+    </div>
+    <a class="btn btn-rust btn-nav nowrap" href="tel:+13375550182">Call now</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="rise-in">
+        <h1 class="h1">Lafayette's AC, fixed today.</h1>
+        <p class="hero-lede">22 years, one family. Randy Angelle and his crew answer the phone, show up the same day, and tell you straight what it costs.</p>
+        <div class="hero-actions">
+          <a class="btn btn-rust btn-hero nowrap" href="tel:+13375550182">(337) 555-0182</a>
+          <a class="btn btn-ghost btn-quiet" href="#book">Request a time online</a>
+        </div>
+        <p class="hero-fineprint">Licensed mechanical contractor · Insured · Answering calls 7 days</p>
+      </div>
+      <!-- STOCK PLACEHOLDER: replace with a photo of Randy's actual truck, then update the alt text. -->
+      <div class="framed hero-media">
+        <img src="images/service-truck-hero.jpg" width="654" height="468"
+             alt="Angelle's white service truck, utility body stocked with parts, parked at a Lafayette job site.">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Trust strip ===================== -->
+  <section class="trust">
+    <div class="wrap trust-inner">
+      <div class="trust-grid">
+        <div class="trust-cell">
+          <span class="trust-big">22 years</span>
+          <span class="trust-small">Family owned in Lafayette</span>
+        </div>
+        <div class="trust-cell">
+          <span class="trust-big">Licensed</span>
+          <span class="trust-small">Mechanical contractor, insured</span>
+        </div>
+        <div class="trust-cell">
+          <span class="trust-big">4.9★</span>
+          <span class="trust-small">Google rating</span>
+        </div>
+        <div class="trust-cell">
+          <span class="trust-big">Same day</span>
+          <span class="trust-small">Service across Acadiana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Services ===================== -->
+  <section class="section">
+    <div class="wrap section-inner">
+      <h2 class="h2">What we do</h2>
+      <p class="section-lede">Residential systems, start to finish. If it cools or heats a house in Acadiana, we work on it.</p>
+      <div class="hairline-grid services-grid">
+
+        <div class="service-card">
+          <div class="service-swatch" style="background: #C4491D;"></div>
+          <h3 class="service-name">AC repair</h3>
+          <p class="service-line">Warm air, no air, water on the floor, or a unit that won't start. Diagnosed and fixed the same day when we can.</p>
+          <span class="service-note">Most common call</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-swatch" style="background: #2E5C4F;"></div>
+          <h3 class="service-name">Heating</h3>
+          <p class="service-line">Furnaces and heat pumps checked, repaired, and made safe before the first cold snap.</p>
+          <span class="service-note">Gas &amp; electric</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-swatch" style="background: #8A7A5C;"></div>
+          <h3 class="service-name">Maintenance</h3>
+          <p class="service-line">A spring tune-up before Louisiana summer does what it does to a tired system.</p>
+          <span class="service-note">Twice a year</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-swatch" style="background: #1F2E28;"></div>
+          <h3 class="service-name">Installation</h3>
+          <p class="service-line">New systems sized for your actual house, not a rule of thumb. Straight pricing, no upsell theater.</p>
+          <span class="service-note">Financing available</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Quote calculator =====================
+       Renders a valid default estimate with no JS. script.js updates it
+       in place when the buttons are used.
+       ============================================================ -->
+  <section class="calc">
+    <div class="wrap calc-inner">
+      <div>
+        <h2 class="h2 calc-h2">Ballpark it before you call</h2>
+        <p class="calc-lede">Three questions, a real range. No email required, no sales call. Randy confirms the exact price at your house before any work starts.</p>
+
+        <div class="calc-steps">
+
+          <div>
+            <div class="step-head">
+              <span class="step-num">1</span>
+              <span class="step-label" id="calc-job-label">What do you need?</span>
+            </div>
+            <div class="opts" role="group" aria-labelledby="calc-job-label" data-calc-group="job">
+              <button type="button" class="opt" data-value="repair" aria-pressed="true">Repair</button>
+              <button type="button" class="opt" data-value="maintenance" aria-pressed="false">Maintenance</button>
+              <button type="button" class="opt" data-value="install" aria-pressed="false">New install</button>
+            </div>
+          </div>
+
+          <div>
+            <div class="step-head">
+              <span class="step-num">2</span>
+              <span class="step-label" id="calc-urgency-label">How soon?</span>
+            </div>
+            <div class="opts" role="group" aria-labelledby="calc-urgency-label" data-calc-group="urgency">
+              <button type="button" class="opt" data-value="today" aria-pressed="true">Today</button>
+              <button type="button" class="opt" data-value="week" aria-pressed="false">This week</button>
+              <button type="button" class="opt" data-value="flexible" aria-pressed="false">Flexible</button>
+            </div>
+          </div>
+
+          <div>
+            <div class="step-head">
+              <span class="step-num">3</span>
+              <span class="step-label" id="calc-age-label">How old is the unit?</span>
+            </div>
+            <div class="opts" role="group" aria-labelledby="calc-age-label" data-calc-group="age">
+              <button type="button" class="opt" data-value="0-5" aria-pressed="false">Under 5 yrs</button>
+              <button type="button" class="opt" data-value="6-12" aria-pressed="true">6–12 yrs</button>
+              <button type="button" class="opt" data-value="13-20" aria-pressed="false">13–20 yrs</button>
+              <button type="button" class="opt" data-value="20+" aria-pressed="false">Over 20 yrs</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="estimate" aria-live="polite">
+        <span class="est-label">Typical range for this job in Lafayette</span>
+        <div class="est-big" id="est-range">$210 – $730</div>
+        <p class="est-note" id="est-note">Includes the diagnostic visit. Most Lafayette repairs land in the lower half of this range — refrigerant, capacitors, and blower motors are the usual suspects.</p>
+        <dl class="est-lines">
+          <div class="est-line"><dt>Job</dt><dd id="est-job">Repair or diagnosis</dd></div>
+          <div class="est-line"><dt>Timing</dt><dd id="est-timing">Same day</dd></div>
+          <div class="est-line"><dt>System age</dt><dd id="est-age">6–12 years</dd></div>
+        </dl>
+        <a class="btn btn-rust btn-block nowrap" href="tel:+13375550182">Call (337) 555-0182</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== About ===================== -->
+  <section class="section">
+    <div class="wrap about-inner">
+      <!-- STOCK PLACEHOLDER: swap for a real photo of Randy or the crew, then update the alt text. -->
+      <div class="framed about-media">
+        <img src="images/service-truck-side.jpg" width="680" height="400"
+             alt="Angelle's service truck loaded for a residential heating and cooling call in Lafayette.">
+      </div>
+      <div>
+        <h2 class="h2 about-h2">Randy Angelle has been doing this since 2003</h2>
+        <p class="about-p">Angelle's is a family business in Lafayette — Randy on the phone, Randy's crew in the truck. Twenty-two years of Louisiana summers means we've seen your unit's exact problem before, probably last week.</p>
+        <p class="about-p">We're a licensed mechanical contractor, insured, and scored in the top 11% of contractors in the state by BuildZoom. Our Google rating is 4.9 across the neighborhoods we've worked in for two decades.</p>
+        <div class="hairline-grid proof-grid">
+          <div class="proof-cell">
+            <div class="proof-k">Since 2003</div>
+            <div class="proof-v">Same owner, same name</div>
+          </div>
+          <div class="proof-cell">
+            <div class="proof-k">Top 11%</div>
+            <div class="proof-v">BuildZoom score, Louisiana</div>
+          </div>
+          <div class="proof-cell">
+            <div class="proof-k">Owner-run</div>
+            <div class="proof-v">Randy answers the phone</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Service area =====================
+       Was an sc-for loop over the areas list; now static list items.
+       ======================================================== -->
+  <section class="areas">
+    <div class="wrap areas-inner">
+      <div>
+        <h2 class="h2 areas-h2">Where we work</h2>
+        <p class="areas-lede">Lafayette and the surrounding parishes. If you're not sure, call — we'll tell you straight.</p>
+      </div>
+      <ul class="areas-list">
+        <li>Lafayette</li>
+        <li>Broussard</li>
+        <li>Youngsville</li>
+        <li>Scott</li>
+        <li>Carencro</li>
+        <li>Milton</li>
+        <li>Duson</li>
+        <li>Breaux Bridge</li>
+        <li>New Iberia</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== Booking form =====================
+       Real static markup, so Netlify's build-time form parser sees it.
+       No action attribute: without JS the browser POSTs to this page and
+       Netlify serves its own confirmation. With JS, script.js intercepts
+       and posts the same payload via fetch.
+       ======================================================== -->
+  <section class="booking" id="book">
+    <div class="wrap booking-inner">
+      <div>
+        <h2 class="h2 booking-h2">Rather not call?</h2>
+        <p class="booking-p">Leave your number and what's going on. We call back the same day — usually within the hour during business hours.</p>
+        <p class="booking-p">If your house is over 85° and you have kids or someone elderly at home, please call instead: <a href="tel:+13375550182">(337) 555-0182</a>.</p>
+      </div>
+
+      <form class="booking-form" name="booking" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="booking">
+
+        <label class="field">Name
+          <input name="name" type="text" autocomplete="name" required placeholder="Full name">
+        </label>
+
+        <label class="field">Phone
+          <input name="phone" type="tel" autocomplete="tel" required placeholder="(337) 000-0000">
+        </label>
+
+        <label class="field">Town
+          <input name="town" type="text" autocomplete="address-level2" placeholder="Lafayette">
+        </label>
+
+        <label class="field">Best time
+          <select name="time">
+            <option>As soon as possible</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening after 5</option>
+            <option>Tomorrow is fine</option>
+          </select>
+        </label>
+
+        <label class="field span-2">What's happening?
+          <textarea name="issue" rows="4" placeholder="Blowing warm air, unit outside is running but nothing inside…"></textarea>
+        </label>
+
+        <div class="span-2 form-actions">
+          <button type="submit" class="btn btn-rust btn-submit">Request a call back</button>
+          <span class="form-status" id="form-status" role="status" aria-live="polite">We never share your number.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <div class="footer-brand">Angelle's</div>
+      <div class="footer-tag">Affordable Air Conditioning &amp; Heating</div>
+      <a class="footer-phone" href="tel:+13375550182">(337) 555-0182</a>
+    </div>
+    <div class="footer-col">
+      <h2>Hours</h2>
+      <span>Mon–Fri, 7am–6pm</span>
+      <span>Saturday, 8am–2pm</span>
+      <span>Emergency calls, 7 days</span>
+    </div>
+    <div class="footer-col">
+      <h2>Lafayette, LA</h2>
+      <!-- TODO: real street address and Louisiana mechanical license number -->
+      <span class="footer-meta">[street address]</span>
+      <span class="footer-meta">[LA mechanical license #]</span>
+    </div>
+    <div class="footer-col">
+      <h2>Find us</h2>
+      <!-- TODO: real Google Business Profile and Facebook URLs -->
+      <a href="#">Google reviews — 4.9★</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <div class="wrap">Family owned and operated in Lafayette since 2003. Licensed mechanical contractor, insured.</div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
