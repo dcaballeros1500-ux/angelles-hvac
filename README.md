@@ -21,16 +21,18 @@ python3 -m http.server 8000
 
 | # | Item | Where |
 |---|------|-------|
-| 1 | **Phone number** is the `(337) 555-0182` placeholder from the design | `index.html` ×6, `script.js` ×1 |
+| 1 | ~~Phone number~~ — done, `(337) 236-1738` is live | `index.html` ×6, `script.js` ×1 |
 | 2 | Street address and Louisiana mechanical license number | `index.html`, footer |
 | 3 | Google Business Profile and Facebook URLs (`href="#"`) | `index.html`, footer |
 | 4 | Photos are stock — swap for Randy's real truck/crew and rewrite the alt text | `images/` |
 | 5 | Confirm the "22 years" / "since 2003" figures with Randy | `index.html` ×4 |
 
-Replace the phone number everywhere in one pass:
+Replace the phone number everywhere in one pass (swap in the new number
+on both sides):
 
 ```bash
-grep -rl '555-0182\|+13375550182' . --exclude-dir=.git | xargs sed -i '' -e 's/(337) 555-0182/(337) 555-0199/g' -e 's/+13375550182/+13375550199/g'
+grep -rl '236-1738\|+13372361738' . --exclude-dir=.git | xargs sed -i '' \
+  -e 's/(337) 236-1738/(337) 555-0199/g' -e 's/+13372361738/+13375550199/g'
 ```
 
 ## Netlify Forms

@@ -8,7 +8,7 @@
 
   /* --- Phone number, used in the form's error message ---------------------
      Keep in sync with index.html. */
-  var PHONE = '(337) 555-0182';
+  var PHONE = '(337) 236-1738';
 
   /* ======================================================================
      1. Quote calculator
