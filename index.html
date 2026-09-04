@@ -250,8 +250,17 @@
         <p class="booking-p">If your house is over 85° and you have kids or someone elderly at home, please call instead: <a href="tel:+13372361738">(337) 236-1738</a>.</p>
       </div>
 
-      <form class="booking-form" name="booking" method="POST" data-netlify="true">
+      <form class="booking-form" name="booking" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="booking">
+
+        <!-- Honeypot. Invisible to people and skipped by keyboard and screen
+             readers; bots fill it in anyway and Netlify drops those. Not one
+             of the five real fields -- Netlify strips it from submissions. -->
+        <p hidden>
+          <label>Don't fill this out if you're human:
+            <input name="bot-field" tabindex="-1" autocomplete="off">
+          </label>
+        </p>
 
         <label class="field">Name
           <input name="name" type="text" autocomplete="name" required placeholder="Full name">

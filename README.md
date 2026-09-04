@@ -46,6 +46,11 @@ form is required — that workaround exists only for JavaScript-rendered forms
 visitor stays on the page. If JavaScript fails or is unavailable, the form falls
 back to a native POST and Netlify shows its own confirmation page.
 
+Spam is filtered with a honeypot: `data-netlify-honeypot="bot-field"` plus a
+hidden `bot-field` input. People never see it and it is skipped by keyboard and
+screen readers; bots fill it in and Netlify silently drops those submissions.
+It is not one of the five real fields and never appears in a submission.
+
 **Form detection is off by default on new Netlify sites.** After the first
 deploy: Site configuration → Forms → enable form detection, then trigger a new
 deploy. Submissions land under the form name `booking`.
