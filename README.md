@@ -51,9 +51,16 @@ hidden `bot-field` input. People never see it and it is skipped by keyboard and
 screen readers; bots fill it in and Netlify silently drops those submissions.
 It is not one of the five real fields and never appears in a submission.
 
-**Form detection is off by default on new Netlify sites.** After the first
-deploy: Site configuration → Forms → enable form detection, then trigger a new
-deploy. Submissions land under the form name `booking`.
+Form detection is off by default on new Netlify sites, so it had to be enabled
+under Site configuration → Forms before a deploy would register anything. That
+is already done here — submissions land under the form name `booking`.
 
-Set up notifications at Forms → Settings → Form notifications so new leads reach
-Randy's phone or inbox — the dashboard alone is not a lead workflow.
+Still open: notifications. Set them at Forms → Settings → Form notifications so
+new leads reach Randy's phone or inbox. The dashboard alone is not a lead
+workflow.
+
+## Deploying
+
+Live at https://angelles-hvac.netlify.app, deployed from this repo's `main`
+branch. Pushing to `main` builds and publishes automatically — no build command,
+publish directory `.`, both declared in `netlify.toml`.
